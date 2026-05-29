@@ -11,7 +11,6 @@ builder.Services.AddSwaggerGen();
 
 // Tell the DI container: "When anyone asks for IProductService,
 // give them a ProductService. One new ProductService instance per HTTP request."
-
 builder.Services.AddScoped<IProductService, ProductService>();
 
 // Same instance used for all requests. Data persist while app is running.
